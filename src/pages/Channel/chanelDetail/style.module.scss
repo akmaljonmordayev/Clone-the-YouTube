@@ -1,0 +1,53 @@
+.detail {
+  &_img {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 200px;
+    }
+  }
+  &_trailer {
+    margin: 5% 0;
+    border-radius: 10px;
+  }
+  &_info {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    img {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+    }
+  }
+  .info_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .info_p {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    p {
+      font-size: 13px;
+      font-weight: 300;
+      color: #797878;
+      letter-spacing: 1px;
+      a {
+        font-size: 18px;
+        color: red;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .detail {
+    &_info {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+}

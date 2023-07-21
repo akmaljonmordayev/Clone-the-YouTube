@@ -1,0 +1,9 @@
+.App {
+  margin: auto;
+  margin-top: 2%;
+}
+.active {
+  border-bottom: 2px solid black;
+  background-color: rgb(242, 242, 242);
+  font-weight: 700 !important;
+}

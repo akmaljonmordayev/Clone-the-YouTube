@@ -1,0 +1,114 @@
+.videos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    padding: 10px 20px;
+    width:100%;
+    height: calc(100vh - 110px);
+    overflow-y: scroll;
+    padding-bottom: 24px;
+    row-gap: 30px;
+     &::-webkit-scrollbar{
+        display: none;
+    }
+    .wrapper{
+        display: flex;
+        font-size: 15px;
+        flex-direction: column;
+        width: 330px;
+        text-align: center;
+        height: 430px;
+        color: white;
+        background-color:darkblue;
+        &:hover{
+            transform: scale(1.1);
+        }
+        img{
+            width: 330px;
+            height:230px;
+        }
+        h1{
+            text-align: center;
+            font-size: 20px;
+            padding-top: 10px;
+            padding-top: 10px 20px;
+        }
+        h2{
+            text-align: center;
+            font-size: 20px;
+            padding-top: 10px;
+            padding-top: 10px 20px;
+        }
+        }
+    }
+
+@media(max-width:1390px){
+    .videos{
+        grid-template-columns: repeat(3, 1fr);
+        .wrapper{
+            width: 400px;
+            img{
+                width: 400px;
+            }
+        }
+    }
+}
+@media(max-width:1268px){
+    .videos{
+        grid-template-columns: repeat(3, 1fr);
+        .wrapper{
+            width: 330px;
+            img{
+                width: 330px;
+            }
+        }
+    }
+}
+@media(max-width:1039px){
+    .videos{
+        grid-template-columns: repeat(2, 1fr);
+        .wrapper{
+            width: 330px;
+            img{
+                width: 330px;
+            }
+        }
+    }
+}
+@media(max-width:717px){
+    .videos{
+        grid-template-columns: repeat(2, 1fr);
+        .wrapper{
+            width: 270px;
+            font-size: 10px;
+            img{
+                width: 270px;
+            }
+        }
+    }
+}
+@media(max-width:594px){
+    .videos{
+        grid-template-columns: repeat(1, 1fr);
+        .wrapper{
+            width: 300px;
+            font-size: 10px;
+            img{
+                width: 300px;
+            }
+        }
+    }
+}
+@media(max-width:328px){
+    .videos{
+        grid-template-columns: repeat(1, 1fr);
+        .wrapper{
+            width: 270px;
+            font-size: 10px;
+            margin-left: 0px;
+            img{
+                width: 270px;
+            }
+        }
+    }
+}
